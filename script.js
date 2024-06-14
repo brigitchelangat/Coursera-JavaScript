@@ -1,6 +1,5 @@
 //variable declaration keyword var)
 var X = "Hello World!";
-var message = "hi";
 /*
 a) Function definition syntax
 1. function a ( Arguments){
@@ -18,5 +17,18 @@ a) Function definition syntax
  3. compare(4, "a");
  4. compare();
  
- 
+
 */
+// Scope and scope chain
+var message = "in global";
+console.log("global: message = "+message);
+var a = function(){
+    var message ="inside a";
+    console.log("a: message = "+message);
+    b(); //Outer Environment of b is the global
+}
+
+function b(){
+    console.log("b: message = "+message);
+}
+a();
