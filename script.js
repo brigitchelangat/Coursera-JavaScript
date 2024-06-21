@@ -47,3 +47,10 @@ a();
 
 
 //Lecture 43: Common Language Constructs
+// 1. String concatenation 
+var string = "Hello";
+string += " World";
+//string = string+" World";
+console.log(string+"!");
+
+// 2. 
