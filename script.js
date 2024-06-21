@@ -53,4 +53,6 @@ string += " World";
 //string = string+" World";
 console.log(string+"!");
 
-// 2. 
+// 2. Math Operators
+console.log((5+4)/3);
+console.log(undefined/5); //NaN
