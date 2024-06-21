@@ -1,5 +1,11 @@
 //variable declaration keyword var)
 var X = "Hello World!";
+//undefined type in JS
+var x;   
+console.log(x);
+if(x ==undefined){
+    console.log("x is undefined")
+}
 /*
 a) Function definition syntax
 1. function a ( Arguments){
@@ -38,3 +44,6 @@ function b(){
 }
 
 a();
+
+
+//Lecture 43: Common Language Constructs
