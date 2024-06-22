@@ -80,3 +80,11 @@ if(x === y)
     else{
         console.log("Strict: x='4' is NOT  equal to y=4");
     }
+
+//for loop
+ var sum = 0;
+ for(var i = 0; i < 10; i++){
+    console.log(i);
+    sum += i;
+ }
+ console.log("Sum of 0 through 9 is : " + sum);
