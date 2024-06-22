@@ -88,3 +88,16 @@ if(x === y)
     sum += i;
  }
  console.log("Sum of 0 through 9 is : " + sum);
+
+ //Handling Default values
+ function orderChickenWith(sideDish){
+    // // 1. Using if statement
+    // if(sideDish === undefined){
+    //     sideDish = "whatever!"
+    // }
+    sideDish = sideDish || "whatever!" //second way
+    console.log("Chicken with " + sideDish)
+ }
+
+ orderChickenWith("noodles");
+ orderChickenWith();
