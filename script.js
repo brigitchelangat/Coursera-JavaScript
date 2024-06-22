@@ -59,3 +59,15 @@ console.log(undefined/5); //NaN
 
 //3. Equality
 
+var x = 4, y = 4;
+if(x == y)
+    {
+        console.log("x=4 is equal to y=4");
+    }
+
+//Type coercion - Automatically converting type before comparing
+x = "4";
+if(x == y)
+    {
+         console.log("x='4' is equal to y=4");
+    }
