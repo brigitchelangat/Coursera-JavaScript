@@ -57,7 +57,7 @@ console.log(string+"!");
 console.log((5+4)/3);
 console.log(undefined/5); //NaN
 
-//3. Equality
+//3. Equality (==)
 
 var x = 4, y = 4;
 if(x == y)
@@ -70,4 +70,13 @@ x = "4";
 if(x == y)
     {
          console.log("x='4' is equal to y=4");
+    }
+
+//4. Strict Equality (===)
+if(x === y)
+    {
+        console.log("Strict: x=4 is equal to y=4");
+    }
+    else{
+        console.log("Strict: x='4' is NOT  equal to y=4");
     }
