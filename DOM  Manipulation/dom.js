@@ -3,6 +3,7 @@ console.log(document.getElementById("title"));
 console.log(document instanceof HTMLDocument);
 
 function sayHello(event) {
+    console.log(this);
     var name = document.getElementById("name").value;
     var message = "<h2>Hello " + name + "!</h2>";
     console.log(message);
@@ -17,5 +18,6 @@ function sayHello(event) {
      }
 }
 
-
-//Unobstrusive event handling - HTML doesn't need to know anything about your JS
+// //Unobstrusive event handling - HTML doesn't need to know anything about your JS
+// document.querySelector("button").addEventListener("click",sayHello);
+document.querySelector("button").onclick =sayHello;
