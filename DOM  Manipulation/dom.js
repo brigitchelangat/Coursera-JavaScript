@@ -1,8 +1,8 @@
-//DOM Manipulation
+//DOM Manipulation & Event Handling
 console.log(document.getElementById("title"));
 console.log(document instanceof HTMLDocument);
 
-function sayHello() {
+function sayHello(event) {
     var name = document.getElementById("name").value;
     var message = "<h2>Hello " + name + "!</h2>";
     console.log(message);
@@ -16,3 +16,6 @@ function sayHello() {
         document.querySelector("#title").textContent = title
      }
 }
+
+
+//Unobstrusive event handling - HTML doesn't need to know anything about your JS
